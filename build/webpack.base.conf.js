@@ -69,7 +69,10 @@ module.exports = {
     ]
   },
   vue: {
-    loaders: cssLoaders()
+    loaders: cssLoaders({
+      sourceMap: false,
+      extract: false
+    })
   },
   eslint: {
     formatter: require('eslint-friendly-formatter')
