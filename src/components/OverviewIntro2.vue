@@ -53,7 +53,7 @@ export default {
 #total_summoners_box
   display: flex
   flex-wrap: wrap
-  width: 80%
+  width: 84%
   .individual_summoner
     width: 4px
     height: 4px
