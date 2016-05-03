@@ -15,6 +15,22 @@ router.map({
     component: function (resolve) {
       require(['./components/OverviewView'], resolve)
     }
+  },
+  '/overview2': {
+    component: function (resolve) {
+      require(['./components/OverviewView2'], resolve)
+    },
+    subRoutes: {
+      '/': {
+        // This component will be rendered into Foo's <router-view>
+        // when /foo is matched. Using an inline component definition
+        // here for convenience.
+        component: function (resolve) {
+          require(['./components/OverviewIntro2'], resolve)
+        }
+      }
+      // other sub routes...
+    }
   }
   // '*': {
   //   component: function (resolve) {
