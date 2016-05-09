@@ -3,11 +3,11 @@
   #table_of_contents_box
     h3 A LOOK AT
     h1.two CHAMPION MASTERY
-    h5 Dive into the data of over 100,000 matches and 70,000 summoners and take a look at some champion mastery trends.
+    h5 Dive into the data of over 100,000 matches and 600,000 summoners and take a look at some champion mastery trends.
     .table_of_contents_row
       h4.title_num 01.
-      h4.title_name AN OVERVIEW
-    .table_of_contents_row
+      h4.title_name(v-link="{name: 'overviewintro'}") AN OVERVIEW
+    .table_of_contents_row(v-link="{name: 'summonersintro'}")
       h4.title_num 02.
       h4.title_name THE SUMMONERS
     .table_of_contents_row
