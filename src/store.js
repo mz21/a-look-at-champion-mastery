@@ -30,26 +30,14 @@ export default {
     },
     'byregionmastery': {
       beforePage: 'summonersbyrole',
-      afterPage: 'byrank'
-    },
-    'byrank': {
-      beforePage: 'byregionmastery',
       afterPage: 'championsintro'
     },
     'championsintro': {
-      beforePage: 'byrank',
-      afterPage: 'championsplayrate'
-    },
-    'championsplayrate': {
-      beforePage: 'championsintro',
-      afterPage: 'championssummary'
-    },
-    'championssummary': {
-      beforePage: 'championsplayrate',
+      beforePage: 'byregionmastery',
       afterPage: 'root'
     },
     'root': {
-      beforePage: 'championssummary',
+      beforePage: 'championsintro',
       afterPage: 'overviewintro'
     }
   }

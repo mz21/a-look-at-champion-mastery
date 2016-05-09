@@ -93,6 +93,12 @@ export default {
     display: flex
     .by_role_column
       width: 20%
+  .champion_box
+    width: 100%
+  .champion_image
+    margin: 0 auto
+    max-width: 94%
+    height: auto
 .intro_box
   text-align: center
   .role_question
@@ -131,12 +137,6 @@ export default {
     color: rgb(245,245,245)
     position: absolute
     margin: 0 auto
-.champion_box
-  width: 100%
-.champion_image
-  margin: 0 auto
-  max-width: 94%
-  height: auto
 .test
   height: 50px
   position: relative

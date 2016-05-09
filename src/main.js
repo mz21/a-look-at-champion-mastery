@@ -73,12 +73,6 @@ router.map({
         component: function (resolve) {
           require(['./components/SummonersByRegionMastery'], resolve)
         }
-      },
-      '/by-rank': {
-        name: 'byrank',
-        component: function (resolve) {
-          require(['./components/SummonersByRank'], resolve)
-        }
       }
     }
   },
@@ -92,18 +86,6 @@ router.map({
         name: 'championsintro',
         component: function (resolve) {
           require(['./components/ChampionsIntro'], resolve)
-        }
-      },
-      '/champions-play-rate': {
-        name: 'championsplayrate',
-        component: function (resolve) {
-          require(['./components/ChampionsPlayRate'], resolve)
-        }
-      },
-      '/champions-summary': {
-        name: 'championssummary',
-        component: function (resolve) {
-          require(['./components/ChampionsSummary'], resolve)
         }
       }
     }

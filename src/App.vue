@@ -14,27 +14,30 @@ export default {
   },
   methods: {
     changePage: function (e) {
-      console.log(e)
+      console.log('start')
       let keyCode = e.keyCode
       let delta = e.deltaY
       const DOWNKEY = 40
       const UPKEY = 38
-      const LOW_SCROLL_SENSITIVITY = 4
+      const LOW_SCROLL_SENSITIVITY = 7
       let router = this.$route.router
 
       if (this.pagechange_lock === false || e.type === 'keydown') {
         if (keyCode === DOWNKEY || delta > LOW_SCROLL_SENSITIVITY) {
           this.pagechange_lock = true
+          this.last_scroll_time = Date.now()
           router.go({name: Store.state[this.$route.name].afterPage})
         } else if (keyCode === UPKEY || delta < -1 * LOW_SCROLL_SENSITIVITY) {
           this.pagechange_lock = true
+          this.last_scroll_time = Date.now()
           router.go({name: Store.state[this.$route.name].beforePage})
         }
       }
-      if (Date.now() - this.last_scroll_time > 40) {
+      if (Date.now() - this.last_scroll_time > 1000) {
+        console.log('lock off')
         this.pagechange_lock = false
       }
-      this.last_scroll_time = Date.now()
+      console.log('done')
     }
   },
   ready: function () {
@@ -87,7 +90,7 @@ html
     font-size: 1em
 
 .fade-transition
-  transition: opacity .3s linear
+  transition: opacity .6s linear
 
 .fade-leave
   opacity: 0

@@ -4,26 +4,18 @@
     h3 A LOOK AT
     h1.two CHAMPION MASTERY
     h5 Dive into the data of over 100,000 matches and 600,000 summoners and take a look at some champion mastery trends.
-    .table_of_contents_row
+    .table_of_contents_row(v-link="{name: 'overviewintro'}") 
       h4.title_num 01.
-      h4.title_name(v-link="{name: 'overviewintro'}") AN OVERVIEW
+      h4.title_name AN OVERVIEW
     .table_of_contents_row(v-link="{name: 'summonersintro'}")
       h4.title_num 02.
       h4.title_name THE SUMMONERS
-    .table_of_contents_row
+    .table_of_contents_row(v-link="{name: 'championsintro'}") 
       h4.title_num 03.
       h4.title_name THE CHAMPIONS
 </template>
 
 <script>
-export default {
-  route: {
-    deactivate: function (transition) {
-      console.log('deactivation happened')
-      transition.next()
-    }
-  }
-}
 </script>
 
 <style lang="sass">
@@ -55,6 +47,8 @@ export default {
     // font-family: "ff-meta-serif-web-pro"
     // font-size: 17px
 .table_of_contents_row
+  :hover
+    cursor: pointer
   display: flex
   width: 50%
   h4.title_num, h4.title_name

@@ -3,7 +3,7 @@ div
   h4.overview_question To start, we can look at the champion mastery of every champion of all 600,000 summoners distributed by rank.
   .overlay_section
     h5 CHAMPION MASTERY LEVEL
-    p 600,000 summoners have 41 million champions with mastery. Each dot represents 100,000 champions with mastery.
+    p 600,000 summoners have a combined mastery score of 41 million. Each dot represents 100,000 champions with its mastery level.
     #overview_rank_box
       .overview_rank_section
         p Level 1
