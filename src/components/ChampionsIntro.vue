@@ -13,7 +13,8 @@
       h4 Methodology / Implementation Notes
       p Champion Mastery Score Rank is calculated by counting the number of summoners with Rank 5 mastery.
       p The 'Champs Commonly Mastered' together section is calculated as follows: 1) get the % of summoners with Rank 5 mastery for every single champion, 2) for all summoners with Rank 5 mastery *for the selected champ*, get the % of summoners with Rank 5 mastery for every other champion, 3) get the % increase between the two ratios and sort.
-      p This approach beats a raw counts approach because for raw counts every champ would just show the most mastered champs (Vayne, Lee Sin, Thresh) rather than the champs it has special affinity for. The drawback here is that champs with lower sample size (i.e. Urgot, Galio) can have disproportionate ratios.
+      p This approach beats a raw counts approach because for raw counts every champ shows the most mastered champs (Vayne, Lee Sin, Thresh) rather than the champs it has special affinity for. The drawback here is that champs with lower sample size (i.e. Urgot, Galio) can have disproportionate ratios.
+      p Data Note: Newer champs like Aurelion Sol and Illaoi are disproportionately low because the only data available is total champion mastery, not mastery acquired over a period of time.
     h4 Pick a champ in the grid to see which champs are mastered the most and which champs get mastered together.
     .selected_summoner_box
       .champion_box

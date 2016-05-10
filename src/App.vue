@@ -189,8 +189,8 @@ body
   width: 50%
   left: 0
   right: 0
-  top: 25%
-  height: 50%
+  top: 20%
+  height: 60%
   margin: 0 auto
   background: rgba(120,120,120, 0.85)
   color: white
