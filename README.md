@@ -17,14 +17,12 @@ The core datasets in this app are:
  
 ### Data Methodology / Challenges
  
-Please take a look at the _Data Methodology / Chart Descriptions_ for each section of the site for complete methodology and its pros/cons. Below were some of the tougher challenges with representing the data.
- 
-*
+Please take a look at the _Data Methodology / Chart Descriptions_ for each section of the site for complete methodology and its pros/cons.
  
 ### Technologies Used
  
 #### VueJS
-I used VueJS as the JavaScript front-end framework. There were a few things I was looking for with the JavaScript framework. The app experience I felt was best suited as a single-page, slideshow-like app with URL navigation (to allow linking to specific slides). I also wanted a framework dexterous with representing data state. VueJS made the most sense for these requirements.
+I used VueJS as the JavaScript front-end framework. There were a few things I wanted in a JavaScript framework. The app experience I felt was best suited as a single-page, slideshow-like app with URL navigation (to allow linking to specific slides). I also wanted a framework dexterous with representing data state. VueJS made the most sense for these requirements.
  
 #### Back-End
 The back-end is run on a small Express.js service. The app functionality is overwhelmingly front-end.
