@@ -1,7 +1,7 @@
 <template lang="jade">
 #overview_view
   .intro_box
-    h1 01. AN OVERVIEW
+    h2 01. AN OVERVIEW
     router-view(transition="fade", transition-mode="out-in")
 </template>
 

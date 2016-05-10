@@ -1,7 +1,7 @@
 <template lang="jade">
 #summoners_view
   .intro_box
-    h1 02. THE SUMMONERS
+    h2 02. THE SUMMONERS
     h4.overview_question Which regions have the most champion mastery? (Do Koreans really have more mastery? ...shockingly no.)
     .overlay_section
       h5 AVG TOTAL CHAMPION MASTERY

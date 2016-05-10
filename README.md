@@ -2,13 +2,13 @@
  
 Entry for the 3rd Riot Games API Challenge.
  
-Check out the website here: [A Look At Champion Mastery](www.championmastery.herokuapp.com). **For best viewing experience, use Chrome on a desktop**
+Check out the website here: [A Look At Champion Mastery](www.championmastery.herokuapp.com). **For best viewing experience, use Chrome on a desktop**.
  
 For this challenge, I had a bunch of questions I wanted to answer about champion mastery broadly defined over 3 groups: 1) champions, 2) summoners, and 3) champion mastery as a whole. Among many other questions, I wanted to see how champion mastery correlated with win rates, which champs tended to get mastered together, and what champs mid mains mastered at ADC (because I’m a mid main trying to find a champ for ADC). This site is my attempt to answer these questions.
  
 ### Data
-The core datasets in this app are
-* [Champion Mastery endpoint](https://developer.riotgames.com/api/methods#!/1071/3696), naturally
+The core datasets in this app are:
+* [Champion Mastery endpoint](https://developer.riotgames.com/api/methods#!/1071/3696), naturally.
 * ~600,000 summoner ids over 10 regions. To do this I used the provided [list of 10,000 matches]( https://developer.riotgames.com/discussion/announcements/show/2lxEyIcE) from the 2nd Riot API Challenge and used the [Match endpoint](https://developer.riotgames.com/api/methods#!/1064) to get all the summoner ids. Note: the matches, especially for smaller regions, often had duplicate summoner ids.
 * Summoner rank, which was acquired via the [League endpoint](https://developer.riotgames.com/api/methods#!/985/3356)
 * Win rate data was found via the [Stats endpoint](https://developer.riotgames.com/api/methods#!/1080/3725) which provided the ranked champ stats for all of Season 6.

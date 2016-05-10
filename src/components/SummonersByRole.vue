@@ -1,7 +1,20 @@
 <template lang="jade">
 #summoners_role_view
   .intro_box
-    h1 02. THE SUMMONERS
+    h2 02. THE SUMMONERS
+    .implementation_tag(@click="show_methods()")
+      svg.implementation_symbol(width="24px" height="24px" viewBox="864 144 24 24")
+        g(stroke="none", stroke-width="1", fill="none", fill-rule="evenodd", transform="translate(864.000000, 144.000000)")
+          path(d="M11,17 L13,17 L13,11 L11,11 L11,17 L11,17 Z M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 L12,2 Z M12,20 C7.59,20 4,16.41 4,12 C4,7.59 7.59,4 12,4 C16.41,4 20,7.59 20,12 C20,16.41 16.41,20 12,20 L12,20 Z M11,9 L13,9 L13,7 L11,7 L11,9 L11,9 Z", fill-opacity="0.7", fill="#2DAAB7")
+      p.methods_tag Methodology / Implementation Notes
+    .implementation_box(v-show="show_note")
+      svg.exit_icon(@click="show_methods()", width="14px", height="14px", viewBox="5 5 14 14")
+        polygon(stroke="none", fill="rgb(245,245,245)", fill-rule="evenodd", points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12")
+      h4 Methodology / Implementation Notes
+      p Two arbitrary calculations are in play here: 1) how is a role determined a summoner's main and 2) which champs fit each role.
+      p For #1, I took every summoner's 40 most recent ranked games and if over 35% of a summoner's games had the same role, listed that role as a main (Note: summoners can have up to 2 mains).
+      p For #2, I used strictly my own definition for which champ counted for which role. This was especially problematic for flex roles (i.e. Ekko Top/Mid or Trundle Support/Jungle, which I generally ended up discarding).
+      p Most mastered was determined by collecting the average mastery of all summoners who've played the champ at least once.
     h4.overview_question Play around with the picker below and take a look at the most commonly mastered champs each role plays on and off role. There isn't much diversity.
     h2.role_question 
       | what champions do the mains of all roles master at
@@ -57,14 +70,13 @@ export default {
       mid_champions: {'Top': ['92', '114', '54', '122', '24'], 'Jungle': ['64', '107', '11', '76', '5'], 'Mid': ['157', '238', '103', '105', '99'], 'Support': ['412', '53', '89', '201', '12'], 'ADC': ['67', '222', '81', '236', '51']},
       support_champions: {'Top': ['54', '245', '92', '150', '17'], 'Jungle': ['64', '106', '104', '5', '107'], 'Mid': ['99', '157', '238', '103', '90'], 'Support': ['412', '53', '201', '89', '40'], 'ADC': ['67', '222', '81', '236', '21']},
       adc_champions: {'Top': ['92', '245', '114', '150', '54'], 'Jungle': ['64', '107', '11', '5', '106'], 'Mid': ['157', '238', '103', '99', '105'], 'Support': ['412', '53', '25', '89', '201'], 'ADC': ['67', '222', '236', '81', '51']},
-      champions: ['101', '102', '103', '104', '7'],
-      champions1: ['10', '11', '12', '13', '14'],
-      champions2: ['20', '21', '22', '23', '24'],
-      champions3: ['30', '31', '32', '33', '34'],
-      champions4: ['40', '41', '42', '43', '44']
+      show_note: false
     }
   },
   methods: {
+    show_methods: function () {
+      this.show_note = !this.show_note
+    },
     get_champion_image (key) {
       return require('assets/img/' + key + '.png')
     }

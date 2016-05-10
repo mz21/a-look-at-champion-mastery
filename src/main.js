@@ -30,7 +30,7 @@ router.map({
           require(['./components/OverviewByRank'], resolve)
         }
       },
-      '/by-time-spent': {
+      '/by-mastery-percentage': {
         name: 'overviewbytimespent',
         component: function (resolve) {
           require(['./components/OverviewByTimeSpent'], resolve)

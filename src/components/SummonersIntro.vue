@@ -1,10 +1,9 @@
 <template lang="jade">
 #summoners_view
   .intro_box
-    h1 02. THE SUMMONERS
+    h2 02. THE SUMMONERS
     h4.overview_question How do different groups of summoners approach champion mastery differently?
-    h3.summoner_nav_tag(v-link="{name: 'summonersbyrole'}") a. By Role
-    h3.summoner_nav_tag(v-link="{name: 'byregionmastery'}") b. By Region
+    h4.overview_question This section aims to examine how champion mastery choices are affected by role and the differences in champion mastery between regions.
 </template>
 
 <script>
