@@ -89,6 +89,12 @@ router.map({
         }
       }
     }
+  },
+  '/addendum': {
+    name: 'addendum',
+    component: function (resolve) {
+      require(['./components/AddendumView'], resolve)
+    }
   }
   // '*': {
   //   component: function (resolve) {

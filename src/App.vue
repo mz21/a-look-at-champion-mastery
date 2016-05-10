@@ -4,6 +4,7 @@
   p(v-link="{name: 'overviewintro'}") AN OVERVIEW
   p(v-link="{name: 'summonersintro'}") THE SUMMONERS
   p(v-link="{name: 'championsintro'}") THE CHAMPIONS
+  p(v-link="{name: 'addendum'}") ADDENDUM
 .scroll_section(@click="changePage({type: 'keydown', keyCode: 40})")
   svg.scroll_icon(width="1.25em", height="0.9375em", viewBox="6 8 12 9")
     polygon(id="Shape", stroke="none", fill-opacity="0.7", fill="rgb(245,245,245)", fill-rule="evenodd", points="16.59 8.59 12 13.17 7.41 8.59 6 10 12 16 18 10")

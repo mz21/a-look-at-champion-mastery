@@ -34,10 +34,14 @@ export default {
     },
     'championsintro': {
       beforePage: 'byregionmastery',
+      afterPage: 'addendum'
+    },
+    'addendum': {
+      beforePage: 'championsintro',
       afterPage: 'root'
     },
     'root': {
-      beforePage: 'championsintro',
+      beforePage: 'addendum',
       afterPage: 'overviewintro'
     }
   }

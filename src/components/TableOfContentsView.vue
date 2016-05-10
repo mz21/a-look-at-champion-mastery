@@ -13,6 +13,9 @@
     .table_of_contents_row(v-link="{name: 'championsintro'}") 
       h4.title_num 03.
       h4.title_name THE CHAMPIONS
+    .table_of_contents_row(v-link="{name: 'addendum'}") 
+      h4.title_num 04.
+      h4.title_name ADDENDUM
 </template>
 
 <script>
