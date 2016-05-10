@@ -15,7 +15,7 @@ export default {
       let width = 600
       let height = 360
       let xScale = d3.scale.linear()
-                  .domain([0, 100000])
+                  .domain([0, 80000])
                   .range([margin, width - margin])
       let yScale = d3.scale.linear()
                   .domain([25, 60])
