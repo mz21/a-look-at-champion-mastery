@@ -2,7 +2,7 @@
  
 Entry for the 3rd Riot Games API Challenge.
  
-Check out the website here: [A Look At Champion Mastery](www.championmastery.herokuapp.com). **For best viewing experience, use Chrome on a desktop**.
+Check out the website here: [A Look At Champion Mastery](http://championmastery.herokuapp.com). **For best viewing experience, use Chrome on a desktop**.
  
 For this challenge, I had a bunch of questions I wanted to answer about champion mastery broadly defined over 3 groups: 1) champions, 2) summoners, and 3) champion mastery as a whole. Among many other questions, I wanted to see how champion mastery correlated with win rates, which champs tended to get mastered together, and what champs mid mains mastered at ADC (because I’m a mid main trying to find a champ for ADC). This site is my attempt to answer these questions.
  
