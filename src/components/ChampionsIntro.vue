@@ -27,7 +27,7 @@
           h6 Champs Commonly Mastered With {{get_champion_name(currentChamp)}}
           .related_champion_image_box(v-for="champion in champions_in_common[currentChamp].slice(0,12)")
             .related_champion_index
-              {{$index + 1}}
+              p {{$index + 1}}
             img.related_champion_image(:src="get_champion_image(champion.champ)")
   .champion_images_box
     .champion_image_box(v-for="champion in champions", @click="set_current_champ(champion)")
